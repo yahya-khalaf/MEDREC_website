@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <title>MEREC Website</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width = device-width, intial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+    <section id="Banner">  <!--here we made a banner to put our background in -->
+      <img src="Images/logo.png" class="logo"> <!--here we have the logo -->
+      <div class="banner-text">
+        <h1> MEDREC</h1> <!--the main head for the web page-->
+        <p>  نحن نهتم بصحتك</p>
+        <div class="banner-button">
+          <a href="#"><span> </span>Find Out</a>              <!--put the buttons -->
+          <a href="#"><span> </span>  Read More </a>
+
+      </div>
+    </section>
+    <div id="sideNav">                <!--here we made our navigation sections -->
+      <nav>
+        <ul>
+          <li><a href="#" >Home</a></li>
+          <li><a href="#" >Features</a></li>
+          <li><a href="#" >Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menuButton">            <!--the button layout -->
+      <img src="Images/menu.png" id="menu">
+    </div>
+    <!--the following is the second section of the page -->
+    <section id="Features">
+      <div class="title-text">
+        <p>Features</p>
+        <h1>What we do?</h1>
+      </div>
+      <div class="feature box">
+        <div class="features">
+          <h1> Medical Records</h1>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--the following is our scripts -->
+    <script>           
+      var menuButton= document.getElementById("menuButton")
+      var sideNav= document.getElementById("sideNav")
+      var menu = document.getElementById("menu")
+
+      sideNav.style.right=="-250px";
+
+      menuButton.onclick = function(){ 
+           if(sideNav.style.right=="-250px"){sideNav.style.right="0";
+           menu.src="Images/menu_inverse.png"
+          }
+           else{ sideNav.style.right="-250px";
+           menu.src="Images/menu.png"
+} 
+      }  
+    </script>
+
+   
+    </body>
+  </html>
