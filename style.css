@@ -12,7 +12,7 @@ html,body
     overflow-x: hidden; 
 }
 #Banner{ background: linear-gradient(rgba(0,0,0,0.5),#009688)  ,
- url(Images/medical_back.jpg)   fixed; /*here we have the background image */
+ url(Images/medical_back.jpg); /*here we have the background image */
 background-size:cover;
 background-position: center;
 height: 100vh;
@@ -20,7 +20,7 @@ height: 100vh;
 
 .logo{  /*here we have the layout of the logo */
   width: 140px;
-  position: absolute;
+  position:relative;
   top: 4%;
   left: 10%; 
 }
@@ -214,6 +214,6 @@ font-weight: 50;
 
 #Contact-Us{
   width: 100%;
-  padding: 70px;
+  padding: auto ;
   background: #efefef;
 }
